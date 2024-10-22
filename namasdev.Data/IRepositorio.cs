@@ -13,7 +13,7 @@ namespace namasdev.Data
         void Actualizar(TEntidad entidad);
         void ActualizarPropiedades(IEnumerable<TEntidad> entidades, int tamañoBatch, params string[] propiedades);
         void ActualizarPropiedades(TEntidad entidad, params string[] propiedades);
-        void ActualizarDatosBorrado(TEntidad entidad, int tamañoBatch);
+        void ActualizarDatosBorrado(TEntidad entidad);
         void ActualizarDatosBorrado(IEnumerable<TEntidad> entidades, int tamañoBatch);
         void Eliminar(IEnumerable<TEntidad> entidades, int tamañoBatch);
         void Eliminar(TEntidad entidad);
