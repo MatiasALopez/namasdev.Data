@@ -31,8 +31,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="namasdev.Core, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\namasdev.Core.1.0.1\lib\net45\namasdev.Core.dll</HintPath>
+    <Reference Include="namasdev.Core, Version=1.0.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\namasdev.Core.1.0.2\lib\net45\namasdev.Core.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -47,17 +47,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="EntidadCreadoModificadoBorrado.cs" />
-    <Compile Include="Entidad.cs" />
-    <Compile Include="EntidadBorrado.cs" />
-    <Compile Include="EntidadCreado.cs" />
-    <Compile Include="EntidadCreadoBorrado.cs" />
-    <Compile Include="EntidadCreadoModificado.cs" />
-    <Compile Include="IEntidad.cs" />
-    <Compile Include="IEntidadBorrado.cs" />
-    <Compile Include="IEntidadModificacion.cs" />
-    <Compile Include="IEntidadCreado.cs" />
-    <Compile Include="IEntidadExtensiones.cs" />
     <Compile Include="IRepositorio.cs" />
     <Compile Include="IRepositorioSoloLectura.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

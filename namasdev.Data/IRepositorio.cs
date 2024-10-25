@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 
+using namasdev.Core.Entity;
+
 namespace namasdev.Data
 {
     public interface IRepositorio<TEntidad, TId> : IRepositorioSoloLectura<TEntidad, TId>

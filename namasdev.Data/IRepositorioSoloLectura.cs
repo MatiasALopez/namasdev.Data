@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
+using namasdev.Core.Entity;
 using namasdev.Core.Types;
 
 namespace namasdev.Data
