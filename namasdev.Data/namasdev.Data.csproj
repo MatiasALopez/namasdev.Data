@@ -47,6 +47,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ICargaPropiedades.cs" />
     <Compile Include="IRepositorio.cs" />
     <Compile Include="IRepositorioSoloLectura.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -12,11 +12,13 @@ namespace namasdev.Data
         where TId : IEquatable<TId>
     {
         TEntidad Obtener(TId id, bool incluirBorrados = false);
-        TEntidad Obtener(TId id, bool incluirBorrados = false, IEnumerable<string> cargarPropiedades = null);
-        TEntidad Obtener(TId id, bool incluirBorrados = false, IEnumerable<Expression<Func<TEntidad, object>>> cargarPropiedades = null);
+        TEntidad Obtener(TId id, IEnumerable<string> cargarPropiedades, bool incluirBorrados = false);
+        TEntidad Obtener(TId id, IEnumerable<Expression<Func<TEntidad, object>>> cargarPropiedades, bool incluirBorrados = false);
+        TEntidad Obtener(TId id, ICargaPropiedades<TEntidad> cargarPropiedades, bool incluirBorrados = false);
         IEnumerable<TEntidad> ObtenerLista(bool incluirBorrados = false, OrdenYPaginacionParametros op = null);
-        IEnumerable<TEntidad> ObtenerLista(bool incluirBorrados = false, OrdenYPaginacionParametros op = null, IEnumerable<string> cargarPropiedades = null);
-        IEnumerable<TEntidad> ObtenerLista(bool incluirBorrados = false, OrdenYPaginacionParametros op = null, IEnumerable<Expression<Func<TEntidad, object>>> cargarPropiedades = null);
+        IEnumerable<TEntidad> ObtenerLista(IEnumerable<string> cargarPropiedades, bool incluirBorrados = false, OrdenYPaginacionParametros op = null);
+        IEnumerable<TEntidad> ObtenerLista(IEnumerable<Expression<Func<TEntidad, object>>> cargarPropiedades, bool incluirBorrados = false, OrdenYPaginacionParametros op = null);
+        IEnumerable<TEntidad> ObtenerLista(ICargaPropiedades<TEntidad> cargarPropiedades, bool incluirBorrados = false, OrdenYPaginacionParametros op = null);
         bool ExistePorId(TId id, bool incluirBorrados = false);
     }
 }
